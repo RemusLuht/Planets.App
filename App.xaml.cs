@@ -26,9 +26,9 @@ public partial class App : Application
 			AppWindow appWindow = Microsoft.UI.Windowing.AppWindow.GetFromWindowId(windowId);
 			appWindow.Resize(new SizeInt32(WindowWidth, WindowHeight));
 		});
-		
+
 #endif
 
-		MainPage = new AppShell();
+		MainPage = new NavigationPage(new StartPage());
 	}
 }
