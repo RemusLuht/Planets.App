@@ -2,12 +2,12 @@
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Views.StartPage"
-             Title="StartPage">
+             Title="Solar Planets">
     <Grid>
         <Image
             x:Name="imgEarth"
             Opacity="0"
-            Source="Resources/Images/earth.svg"
+            Source="earth.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="-48"
@@ -17,7 +17,7 @@
         <Image
             x:Name="imgJupiter"
             Opacity="0"
-            Source="Resources/Images/jupiter.svg"
+            Source="jupiter.png"
             VerticalOptions="Center"
             HorizontalOptions="Start"
             TranslationX="-100"
@@ -27,7 +27,7 @@
         <Image
             x:Name="imgSaturn"
             Opacity="0"
-            Source="Resources/Images/saturn.svg"
+            Source="saturn.png"
             VerticalOptions="Center"
             HorizontalOptions="Center"
             TranslationX="32"
@@ -37,7 +37,7 @@
         <Image
             x:Name="imgMars"
             Opacity="0"
-            Source="Resources/Images/mars.svg"
+            Source="mars.png"
             VerticalOptions="Start"
             HorizontalOptions="Start"
             TranslationX="-100"
@@ -47,7 +47,7 @@
         <Image
             x:Name="imgMercury"
             Opacity="0"
-            Source="Resources/Images/mercury.svg"
+            Source="mercury.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="18"
@@ -57,7 +57,7 @@
         <Image
             x:Name="imgVenus"
             Opacity="0"
-            Source="Resources/Images/venus.svg"
+            Source="venus.png"
             VerticalOptions="Start"
             HorizontalOptions="Center"
             TranslationX="84"
@@ -67,7 +67,7 @@
         <Image
             x:Name="imgUranus"
             Opacity="0"
-            Source="Resources/Images/uranus.svg"
+            Source="uranus.png"
             VerticalOptions="Center"
             HorizontalOptions="End"
             TranslationX="100"
@@ -77,7 +77,7 @@
         <Image
             x:Name="imgNeptune"
             Opacity="0"
-            Source="Resources/Images/neptune.svg"
+            Source="neptune.png"
             VerticalOptions="Start"
             HorizontalOptions="End"
             TranslationX="100"
@@ -91,6 +91,7 @@
             Padding="24,32"
             BackgroundColor="{StaticResource FrameBackgroundColor}"
             Stroke="{StaticResource BorderColor}"
+            HorizontalOptions="Fill"
             VerticalOptions="End"
             Margin="20">
             <Border.StrokeShape>
@@ -102,7 +103,7 @@
                     HorizontalOptions="Center"
                     HorizontalTextAlignment="Center"
                     Style="{StaticResource IntroPageHeaderStyle}"
-                    Text="Hello"/>
+                    Text="Hello!"/>
                 <Label
                     HorizontalOptions="Center"
                     HorizontalTextAlignment="Center"
