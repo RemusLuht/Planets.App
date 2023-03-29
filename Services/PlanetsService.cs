@@ -1,4 +1,4 @@
-﻿using Models;
+﻿using Planets.Models;
 using System;
 using System.Collections.Generic;
 using System.Text;
@@ -23,8 +23,27 @@ namespace Services
                     "https://solarsystem.nasa.gov/system/feature_items/images/75_mercury_carousel_1.jpg",
                     "https://solarsystem.nasa.gov/system/feature_items/images/73_carousel_mercury_2.jpg"
                 }
+            },
+
+            new()
+            {
+                Name = "Venus",
+                Subtitle = "The pressure cooker",
+                HeroImage = "venus.png",
+                Description = "Off all the planets, Venus is the most similar to Earth. In fact, Venus is often called earth's sister planet. As similar as it in some ways, however, it is also vey different in others.",
+                AccentColorStart = Color.FromArgb("#a6393b"),
+                AccentColorEnd = Color.FromArgb("#d17f21"),
+                Images = new()
+                {
+                    "https://solarsystem.nasa.gov/system/feature_items/images/143_Venus-800x600.jpg",
+                    "https://solarsystem.nasa.gov/system/feature_items/images/147_Hubble_Venus_Clouds-800x600.jpg",
+                    "https://solarsystem.nasa.gov/system/feature_items/images/146_venus_carousel_3.jpg",
+                    "https://solarsystem.nasa.gov/system/feature_items/images/144_PIA00485_Venus_Caldera-800.jpg"
+                }
             }
         };
+        public static List<Planet> GetAllPlanets()
+            => planets;
         public static List<Planet> GetFeaturedPlanets()
         {
             var rnd = new Random();
